@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicle Parking Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Vehicle Parking Management System</h1>
+
+    <!-- Display available parking slots -->
+    <section id="parking-slots">
+        <h2>Available Parking Slots</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Slot Number</th>
+                    <th>Slot Type</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody id="slot-table-body">
+                <!-- Dynamic content will be inserted here -->
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Vehicle Entry Form -->
+    <section id="vehicle-entry">
+        <h2>Park a Vehicle</h2>
+        <form id="vehicle-form">
+            <input type="text" id="licensePlate" placeholder="License Plate" required>
+            <input type="text" id="vehicleType" placeholder="Vehicle Type" required>
+            <input type="text" id="ownerName" placeholder="Owner Name" required>
+            <input type="text" id="contactNumber" placeholder="Contact Number" required>
+            <button type="submit">Park Vehicle</button>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
